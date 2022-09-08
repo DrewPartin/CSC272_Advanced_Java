@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FileHandlerController">
+   <children>
+      <Text layoutX="224.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GPA Calculator" textAlignment="CENTER" wrappingWidth="151.13671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="gradeInput" layoutX="203.0" layoutY="94.0" prefHeight="25.0" prefWidth="87.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text layoutX="110.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grade Input:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="displayArea" layoutX="157.0" layoutY="142.0" prefHeight="229.0" prefWidth="287.0" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      <Button layoutX="315.0" layoutY="94.0" mnemonicParsing="false" onAction="#addGradeButtonPressed" text="Add Grade">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="416.0" layoutY="94.0" mnemonicParsing="false" onAction="#calculateButtonPressed" text="Calculate">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="549.0" layoutY="14.0" mnemonicParsing="false" onAction="#okButtonPressed" text="OK">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
